@@ -113,6 +113,8 @@ public class TestCase_Action {
 		By addToCart=obj1.getObjectLocatorFromPropertiesFile("addToCart");
 		obj1.click(addToCart, "Click on add to cart");
 		
+		Thread.sleep(3000);
+		
 		Log.info("Product successfully added to cart");
 		} 
 		catch (IOException e) {
@@ -147,10 +149,23 @@ public class TestCase_Action {
 		By signInButton=obj1.getObjectLocatorFromPropertiesFile("signInButton");
 		obj1.click(signInButton, "SignInButton");
 		
+		Thread.sleep(5000);
+		
 		Log.info("Successfully signed into Ebay");
 		}
 		catch (IOException e) {
 			
+			e.getMessage();
+		}
+	}
+	public void buyItNow() throws Exception
+	{
+		try{
+			By buyItNowbtn=obj1.getObjectLocatorFromPropertiesFile("buyItNowbtn");
+			obj1.click(buyItNowbtn, "BuyItNow");
+		}
+		catch(Exception e)
+		{
 			e.getMessage();
 		}
 	}

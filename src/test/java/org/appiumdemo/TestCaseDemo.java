@@ -44,6 +44,8 @@ public class TestCaseDemo {
   			obj2.AddToCart();//add to cart the product which you wish to buy
   			
   			obj2.SignInIntoEbay();//Sign in to ebay using valid credentials
+  			
+  			obj2.buyItNow();//Click on buy it now
   		}
   	
   	catch(Exception e){
